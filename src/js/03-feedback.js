@@ -23,6 +23,8 @@ form.addEventListener('submit', event => {
   event.preventDefault();
   console.log(feedbackFormState);
   localStorage.removeItem('feedback-form-state');
+  feedbackFormState.email = null;
+  feedbackFormState.message = null;
   email.value = null;
   message.value = null;
 });
