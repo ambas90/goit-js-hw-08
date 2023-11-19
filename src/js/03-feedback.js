@@ -9,7 +9,6 @@ function formSaver(event) {
   feedbackFormState.email = email.value;
   feedbackFormState.message = message.value;
   feedbackFormState[event.target.name] = event.target.value;
-  console.log(feedbackFormState);
   localStorage.setItem(
     'feedback-form-state',
     JSON.stringify(feedbackFormState)
